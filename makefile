@@ -1,9 +1,9 @@
-SIM = obj_dir/VFunction
+SIM = obj_dir/VFunction2
 
 all: build run
 
 build:
-	verilator -Wall --cc --exe --build Function.sv CppMnist.cpp
+	verilator -Wall --cc --exe --build Function2.sv cppMnist2_alwaysFF.cpp
 
 run:
 	./$(SIM)
